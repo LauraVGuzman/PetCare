@@ -7,6 +7,7 @@ import { Text, View } from 'react-native';
 // Importing the actual screen components
 import PetListScreen from '../screens/PetListScreen';
 import PetDetailScreen from '../screens/PetDetailScreen';
+import RegisterPetScreen from '../screens/RegisterPetScreen';
 
 // Temporary DummyScreen for tabs that are not yet implemented
 const DummyScreen = ({ route }) => (
@@ -42,7 +43,7 @@ const AppNavigator = () => {
     <NavigationContainer>
       <Tab.Navigator screenOptions={{ headerShown: false }}>
         <Tab.Screen name="Mascotas" component={PetStack} />
-        <Tab.Screen name="Registrar" component={DummyScreen} options={{ headerShown: true }} />
+        <Tab.Screen name="Registrar" component={RegisterPetScreen} options={{ headerShown: false }} />
         <Tab.Screen name="Consejos" component={DummyScreen} options={{ headerShown: true }} />
       </Tab.Navigator>
     </NavigationContainer>
