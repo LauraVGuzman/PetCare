@@ -6,6 +6,7 @@ import { Text, View } from 'react-native';
 
 // Importing the actual screen components
 import PetListScreen from '../screens/PetListScreen';
+import PetDetailScreen from '../screens/PetDetailScreen';
 
 // Temporary DummyScreen for tabs that are not yet implemented
 const DummyScreen = ({ route }) => (
@@ -28,7 +29,7 @@ const PetStack = () => {
       />
       <Stack.Screen 
         name="PetDetail" 
-        component={DummyScreen} // To be replaced in the next step
+        component={PetDetailScreen} // Successfully connected to the real screen
         options={{ title: 'Detalle de la Mascota' }} 
       />
     </Stack.Navigator>
