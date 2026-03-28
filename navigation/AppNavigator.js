@@ -1,0 +1,37 @@
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { Text, View } from 'react-native';
+
+const DummyScreen = ({ route }) => (
+  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <Text>{route.name} Screen</Text>
+  </View>
+);
+
+const Stack = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
+
+const PetStack = () => {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen name="PetList" component={DummyScreen} options={{ title: 'Mis Mascotas' }} />
+      <Stack.Screen name="PetDetail" component={DummyScreen} options={{ title: 'Detalle de la Mascota' }} />
+    </Stack.Navigator>
+  );
+};
+
+const AppNavigator = () => {
+  return (
+    <NavigationContainer>
+      <Tab.Navigator screenOptions={{ headerShown: false }}>
+        <Tab.Screen name="Mascotas" component={PetStack} />
+        <Tab.Screen name="Registrar" component={DummyScreen} options={{ headerShown: true }} />
+        <Tab.Screen name="Consejos" component={DummyScreen} options={{ headerShown: true }} />
+      </Tab.Navigator>
+    </NavigationContainer>
+  );
+};
+
+export default AppNavigator;
