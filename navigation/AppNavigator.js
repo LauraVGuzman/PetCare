@@ -4,6 +4,10 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Text, View } from 'react-native';
 
+// Importing the actual screen components
+import PetListScreen from '../screens/PetListScreen';
+
+// Temporary DummyScreen for tabs that are not yet implemented
 const DummyScreen = ({ route }) => (
   <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
     <Text>{route.name} Screen</Text>
@@ -13,15 +17,25 @@ const DummyScreen = ({ route }) => (
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
+// Stack Navigator to handle the internal flow: List -> Detail
 const PetStack = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="PetList" component={DummyScreen} options={{ title: 'Mis Mascotas' }} />
-      <Stack.Screen name="PetDetail" component={DummyScreen} options={{ title: 'Detalle de la Mascota' }} />
+      <Stack.Screen 
+        name="PetList" 
+        component={PetListScreen} 
+        options={{ title: 'Mis Mascotas' }} 
+      />
+      <Stack.Screen 
+        name="PetDetail" 
+        component={DummyScreen} // To be replaced in the next step
+        options={{ title: 'Detalle de la Mascota' }} 
+      />
     </Stack.Navigator>
   );
 };
 
+// Main Tab Navigator
 const AppNavigator = () => {
   return (
     <NavigationContainer>
