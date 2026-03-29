@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5F5F5',
+    backgroundColor: '#F3E5F5', // Very light purple background
   },
   scrollContent: {
     padding: 20,
@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#333',
+    color: '#4527A0', // Darker purple for the title
     marginBottom: 20,
     textAlign: 'center',
   },
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
   input: {
     backgroundColor: '#FFF',
     borderWidth: 1,
-    borderColor: '#DDD',
+    borderColor: '#D1C4E9', // Light purple border
     borderRadius: 8,
     padding: 12,
     fontSize: 16,
@@ -38,16 +38,16 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   registerButton: {
-    backgroundColor: '#4CAF50',
+    backgroundColor: '#673AB7', // Main Purple
     padding: 15,
     borderRadius: 8,
     alignItems: 'center',
   },
   registerButtonDisabled: {
-    backgroundColor: '#A5D6A7', // Lighter green to indicate it's disabled
+    backgroundColor: '#B39DDB', // Lighter purple when disabled
   },
   clearButton: {
-    backgroundColor: '#F44336',
+    backgroundColor: '#E57373', // Keeping red for clear/delete action
     padding: 15,
     borderRadius: 8,
     alignItems: 'center',
