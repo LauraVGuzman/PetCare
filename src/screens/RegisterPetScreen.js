@@ -10,7 +10,7 @@ import {
   ScrollView 
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import styles from '../styles/RegisterPetStyles';
+import styles from '../src/styles/RegisterPetStyles';
 
 const RegisterPetScreen = () => {
   // Independent states for each form field

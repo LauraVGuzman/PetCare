@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import styles from '../styles/PetDetailStyles';
+import styles from '../src/styles/PetDetailStyles';
 
 const PetDetailScreen = ({ route, navigation }) => {
   // Destructure the pet data received from PetListScreen via route params

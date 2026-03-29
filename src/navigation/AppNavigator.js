@@ -4,10 +4,10 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Text } from 'react-native';
 
-import PetListScreen from '../screens/PetListScreen';
-import PetDetailScreen from '../screens/PetDetailScreen';
-import RegisterPetScreen from '../screens/RegisterPetScreen';
-import TipsScreen from '../screens/TipsScreen';
+import PetListScreen from '../src/screens/PetListScreen';
+import PetDetailScreen from '../src/screens/PetDetailScreen';
+import RegisterPetScreen from '../src/screens/RegisterPetScreen';
+import TipsScreen from '../src/screens/TipsScreen';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();

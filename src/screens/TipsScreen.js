@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import styles from '../styles/TipsStyles';
-import CARE_TIPS from '../data/tipsData';
+import styles from '../../styles/TipsStyles';
+import CARE_TIPS from '../../data/tipsData';
 
 const TipsScreen = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

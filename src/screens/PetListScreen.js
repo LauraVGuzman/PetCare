@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, FlatList, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import styles from '../styles/PetListStyles';
+import styles from '../../styles/PetListStyles';
 
 // Hardcoded initial data
 const INITIAL_PETS = [
