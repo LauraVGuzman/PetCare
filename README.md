@@ -22,7 +22,9 @@ Para evaluar este proyecto en un entorno local (como un emulador de Android o un
    cd PetCare
 
 2. **Instalar dependencias:**
+    ```bash
     npm install
 
 2. **Ejecutar la aplicación:**
+    ```bash
     npm start
